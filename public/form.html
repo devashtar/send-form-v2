@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Form</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <form action="" id="form" class="form__block">
+
+            <!-- title -->
+            <div class="title__form"><img src="images/icon/mailbox.png" class="title__icon"></div>
+
+            <!-- field name -->
+            <div class="input__wrapper">
+                <span class="logo__icon"><img src="images/icon/user-icon.png" class="icon"></span>
+                <span class="valid__icon"></span>
+                <span class="purifier"></span>
+                <span class="input__type">Name</span>
+                <input type="text" id="inputname" class="input" oncontextmenu="return false;" autocomplete="off">
+                <p class="error__message" id="empty"><span class="attention-red"></span> Please fill in this field!</p>
+                <p class="error__message" id="invalid"><span class="attention-red"></span> Only Latin or Cyrillic characters!</p>
+            </div>
+
+            <!-- field e-mail -->
+            <div class="input__wrapper">
+                <span class="logo__icon"><img src="images/icon/envelope-line.png" class="icon"></span>
+                <span class="valid__icon"></span>
+                <span class="purifier"></span>
+                <span class="input__type">e-mail</span>
+                <input type="text" id="inputmail" class="input" oncontextmenu="return false;" autocomplete="off">
+                <p class="error__message" id="empty"><span class="attention-red"></span> Please fill in this field</p>
+                <p class="error__message" id="invalid"><span class="attention-red"></span> example@gmail.com</p>
+            </div>
+
+            <!-- button attach file -->
+            <div class="input__file__wrapper">
+                <div class="left__block__label">
+                    <label class="label__file__input" for="inputfile">Attach file</label>
+                <input type="file" id="inputfile" onchange="checkFiles()" class="input__file" accept=".jpg, .jpeg, .png, .csv, .xlsx, .xls, .doc, .docx, .ppt, .pptx, .txt, .pdf .application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, .application/vnd.ms-excel" multiple>
+                </div>
+                <div class="file__about__block"></div>
+            </div>
+
+            <!-- field text message -->
+            <div class="input__wrapper">
+                <span class="logo__icon"><img src="images/icon/feather-pen_icon.png" class="icon"></span>
+                <span class="valid__icon"></span>
+                <span class="input__type">Message</span>
+                <input type="text" id="inputmessage" class="input" oncontextmenu="return false;" autocomplete="off">
+                <p class="error__message" id="empty"><span class="attention-red"></span> Please fill in this field</p>
+                <p class="error__message" id="invalid"><span class="attention-red"></span> Unknown error, please try again!</p>
+            </div>
+
+            <div class="footer__form">
+                <a href="/" class="footer__buttons link__home">Home</a>
+                <input type="submit" id="btns" class="footer__buttons submit__button" value="Send">
+            </div>
+
+            <!-- hidden block on the right -->
+            <div class="info__button">
+                <div class="right__hidden__block">
+                    <div class="inner__block" id="rultext"></div>
+                    <div class="inner__block" id="prewmes"></div>
+                </div>
+            </div>
+            
+        </form>
+
+        <!-- Content for redact of field inpit message -->
+        <div class="content__message">
+            <textarea class="text__content"></textarea>
+            <div class="title__textarea">You can write a message to the author here! )))</div>
+            <div class="edit__btn__block">
+                <div class="closer" id="canc"></div>
+                <div class="signature"></div>
+                <div class="closer" id="okey"></div>
+            </div>
+        </div>
+
+        <!-- Rules  -->
+        <div class="rules">
+            <div class="rules__content"></div>
+        </div>
+
+        <div class="languages">
+            <div class="item__lang" id="langen"></div>
+            <div class="item__lang" id="langru"></div>
+        </div>
+
+    </div>   
+    
+    <script src="js/form.js"></script>
+</body>
+</html>

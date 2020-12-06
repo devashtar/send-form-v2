@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    
+    background: 
+    linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, black 25%, transparent 25%),
+    linear-gradient(45deg, black 25%, transparent 25%);	
+    background-size: 2em 2em;
+    background-color: #232323;
+}
+
+.title {
+    font-size: 5rem;
+    margin: 0;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.section {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.link {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 5px 8px;
+
+    text-decoration: none;
+    color: #fff;
+    background-color: dodgerblue;
+}
+
+.footer {
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+    text-align: center;
+
+    color: #fff;
+    background-color: #444;
+}
