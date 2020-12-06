@@ -13,5 +13,4 @@ npm install
 ## Description
 You just need to specify your mail and password in "/routers/upload.js", as well as an object for sending a message.
 
-![decstop](https://github.com/devashtar/send-form-v2/blob/main/desctop-app.jpg)
-![mobile](https://github.com/devashtar/send-form-v2/blob/main/mobile-app.jpg)
+![decstop](https://github.com/devashtar/send-form-v2/blob/main/apps.jpg)
